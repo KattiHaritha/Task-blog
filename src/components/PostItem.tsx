@@ -10,6 +10,7 @@ interface PostItemProps {
 const PostItem: React.FC<PostItemProps> = ({post, onClick}) =>(
     <div onClick={() => onClick(post.id)}>
         <h2>{post.title}</h2>
+        {/* <h1></h1> */}
         <p>{post.body.substring(0,100)}...</p>
     </div>
 );
